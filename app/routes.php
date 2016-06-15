@@ -126,6 +126,10 @@ Route::model('billet', 'Billet');
 Route::resource('billet', 'BilletController', ['before' => 'auth']);
 
 Route::controller('id', 'IdController', ['before' => 'auth']);
+Route::controller('p', 'PartialsController', ['before' => 'auth']);
+
+Route::model('award', 'Award');
+Route::resource('award', 'AwardController', ['before' => 'auth']);
 
 // API calls
 
